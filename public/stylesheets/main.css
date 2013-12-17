@@ -1,0 +1,48 @@
+/**
+ *
+**/
+html{
+    background-color:#D0E0FF;
+}
+h1{
+    font-size:400%;
+    text-align:center;
+}
+
+.menu{
+    text-align:center;
+    max-width:794px;
+    margin:0 auto;
+    padding:10px 54px;
+}
+.menu ul{
+    margin:0 auto;
+    padding:0;
+    list-style-type:none;
+}
+.menu li{
+    margin:0;
+    padding:10px 2%;
+    display:inline;
+}
+.menu a{
+    color:#004477;
+}
+
+.main{
+    background-color:#FFFFFF;
+    max-width:794px;
+    margin:0 auto;
+    padding:10px 54px;
+    border:1px solid #000000;
+    overflow:hidden;
+}
+
+@media (min-device-width: 1024px) and (max-width: 480px), (max-device-width: 480px) {
+    h1{
+        font-size:200%;
+    }
+    .main {
+        padding:10px 5%;
+    }
+}
