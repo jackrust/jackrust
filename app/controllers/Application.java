@@ -2,7 +2,6 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
-
 import views.html.*;
 
 public class Application extends Controller {
@@ -18,5 +17,8 @@ public class Application extends Controller {
     }
     public static Result peta() {
         return ok(peta.render());
+    }
+    public static Result parallax() {
+        return ok(parallax.render());
     }
 }

@@ -1,0 +1,32 @@
+/**
+ *
+**/
+.foreground {
+  background: url('/assets/images/foreground.clouds.png') repeat;
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.midground {
+  background: url('/assets/images/midground.clouds.png') repeat;
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.background {
+  background: url('/assets/images/background.clouds.png') repeat;
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
