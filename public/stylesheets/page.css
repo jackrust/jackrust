@@ -1,18 +1,33 @@
 /**
- *
+ * Black: #200810
+ * White: #F5EBE6
+ * Blue: #5040DD
 **/
 html{
-    background-color:#D0E0FF;
+    background: #EBDCC8 url("/assets/images/Texture_EBDCC8.png");
+}
+h1, h2, h3, h4, h5, h6, p, li, table{
+    color: #200810;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Trebuchet MS;
+}
+h1, h2{
+    text-align:center;
 }
 h1{
     font-size:400%;
-    text-align:center;
+}
+h2{
+    font-size:200%;
+}
+
+p, li, table{
+    font-family:georgia;
 }
 
 .menu{
     text-align:center;
-    max-width:794px;
-    margin:0 auto;
     padding:10px 54px;
 }
 .menu ul{
@@ -31,6 +46,7 @@ h1{
 
 .main{
     background-color:#FFFFFF;
+    background-color:rgba(255, 255, 255, 0.5);
     max-width:794px;
     margin:0 auto;
     padding:10px 54px;
