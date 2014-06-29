@@ -7,7 +7,7 @@ GET     /multi                      controllers.Application.index()
 GET     /cv                         controllers.Application.cv()
 GET     /projects                   controllers.Application.projects()
 #GET     /peta                       controllers.Application.peta()
-GET     /dinny                      controllers.Application.dinny()
+#GET     /dinny                      controllers.Application.dinny()
 GET     /parallax                   controllers.Application.parallax()
 GET     /                           controllers.Application.flat()
 
