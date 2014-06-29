@@ -3,11 +3,13 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET     /multi                      controllers.Application.index()
 GET     /cv                         controllers.Application.cv()
 GET     /projects                   controllers.Application.projects()
 #GET     /peta                       controllers.Application.peta()
+GET     /dinny                      controllers.Application.dinny()
 GET     /parallax                   controllers.Application.parallax()
+GET     /                           controllers.Application.flat()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

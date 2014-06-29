@@ -1,0 +1,74 @@
+/**
+ * Black: #200810
+ * White: #F3D4F4; 243, 212, 244
+ * Blue: #5040DD
+**/
+body{
+    height:100%;
+    margin:0;
+    width:100%;
+}
+html{
+    background: #080010 url("/assets/images/Texture_080010.png");
+    height:100%;
+    margin:0;
+    width:100%;
+}
+
+h2, h3, h4, h5, h6, p, li, table{
+    color: #080010;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Trebuchet MS;
+}
+h1, h2{
+    text-align:center;
+}
+h1{
+    font-size:400%;
+    color: #E8C8E8;
+}
+
+h2{
+    font-size:200%;
+}
+
+p, li, table{
+    font-family:georgia;
+}
+
+.menu{
+    text-align:center;
+    padding:10px 20%;
+    width:60%;
+}
+.menu ul{
+    margin:0 auto;
+    padding:0;
+    list-style-type:none;
+}
+.menu li{
+    margin:0;
+    padding:10px 2%;
+    display:inline;
+}
+.menu a{
+    color:#F3D4F4;
+}
+
+.main{
+    background-color:#faf0f4;
+    background-color:rgba(255, 255, 255, 0.7);
+    padding:10px 20%;
+    width:60%;
+}
+
+@media (min-device-width: 1024px) and (max-width: 480px), (max-device-width: 480px) {
+    h1{
+        font-size:200%;
+    }
+    .main {
+        padding:10px 5%;
+        width:90%;
+    }
+}
