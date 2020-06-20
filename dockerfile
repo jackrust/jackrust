@@ -4,6 +4,13 @@ FROM node:current-slim
 # Set the working directory.
 WORKDIR /app
 
+
+CMD echo Begin Debugging
+
+RUN pwd
+
+CMD echo End Debugging
+
 # Copy the file from your host to your current location.
 COPY package.json .
 
