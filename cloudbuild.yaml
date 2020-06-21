@@ -34,5 +34,15 @@ steps:
   args: ['push', 'gcr.io/jackrust/jackrust:latest']
 # Push the image to app engine
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy']
-  timeout: '500s'
+  args:
+  - 'app'
+  - 'deploy'
+  - 'jackrustservice'
+  - '--image'
+  - 'gcr.io/jackrust/jackrust:latest'
+  - '--region'
+  - 'asia-east1'
+  - '--platform'
+  - 'managed'
+images:
+- gcr.io/jackrust/jackrust
