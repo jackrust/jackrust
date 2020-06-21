@@ -1,27 +1,21 @@
 # Use the official image as a parent image.
 FROM node:current-slim
 
-# Set the working directory.
-WORKDIR /app
+# A directory within the virtualized Docker environment
+# Becomes more relevant when using Docker Compose later
+WORKDIR /usr/src/app
 
+# Copies package.json and package-lock.json to Docker environment
+COPY package*.json ./
 
-CMD echo Begin Debugging
-
-RUN pwd
-
-CMD echo End Debugging
-
-# Copy the file from your host to your current location.
-COPY package.json .
-
-# Run the command inside your image filesystem.
+# Installs all node packages
 RUN npm install
 
-# Inform Docker that the container is listening on the specified port at runtime.
+# Copies everything over to Docker environment
+COPY . .
+ 
+# Uses port which is used by the actual application
 EXPOSE 8080
 
-# Run the specified command within the container.
+# Finally runs the application
 CMD [ "npm", "start" ]
-
-# Copy the rest of your app's source code from your host to your image filesystem.
-COPY . .
