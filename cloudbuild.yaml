@@ -1,21 +1,4 @@
 steps:
-# Build the container image
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/jackrust/jackrustservice-00001-vib:$COMMIT_SHA', '.']
-# Push the image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/jackrust/jackrustservice-00001-vib:$COMMIT_SHA']
-# Deploy image to Cloud Run
-- name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - 'run'
-  - 'deploy'
-  - 'jackrustservice'
-  - '--image'
-  - 'gcr.io/jackrust/jackrustservice-00001-vib:$COMMIT_SHA'
-  - '--region'
-  - 'asia-east1'
-  - '--platform'
-  - 'managed'
-images:
-- gcr.io/jackrust/jackrustservice-00001-vib
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
