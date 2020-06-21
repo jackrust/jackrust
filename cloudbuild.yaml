@@ -35,4 +35,4 @@ steps:
 # Push the image to app engine
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy']
-  timeout: '1600s'
+  timeout: '500s'
