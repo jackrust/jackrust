@@ -25,15 +25,14 @@
 #images:
 #- gcr.io/jackrust/jackrust
 
-
 steps:
 # Build the container image
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/jackrust/jackrust:latest', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/jackrust/jackrust:latest', '.']
 # Push the image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/jackrust/jackrust:latest']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/jackrust/jackrust:latest']
 # Push the image to app engine
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['app', 'deploy']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy']
   timeout: '1600s'
