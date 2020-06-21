@@ -22,5 +22,5 @@ steps:
   - 'asia-east1'
   - '--platform'
   - 'managed'
-#images:
+images:
 - gcr.io/jackrust/jackrust
