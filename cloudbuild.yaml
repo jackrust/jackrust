@@ -34,6 +34,6 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/jackrust/jackrust:latest']
 # Push the image to app engine
-  - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy"]
-  timeout: "1600s"
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
+  timeout: '1600s'
