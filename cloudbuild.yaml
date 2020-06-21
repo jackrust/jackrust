@@ -32,17 +32,10 @@ steps:
 # Push the image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/jackrust/jackrust:$COMMIT_SHA']
-# Deploy image to Cloud Run
+# Deploy image to app engine
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'app'
   - 'deploy'
-  - 'jackrustservice'
-  - '--image'
-  - 'gcr.io/jackrust/jackrust:$COMMIT_SHA'
-  - '--region'
-  - 'australia-southeast1'
-  - '--platform'
-  - 'managed'
 images:
 - gcr.io/jackrust/jackrust
