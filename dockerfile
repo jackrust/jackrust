@@ -19,5 +19,5 @@ COPY . .
 
 
 # Finally runs the application
-CMD npm run build
-CMD npm start
+RUN npm run build
+CMD ["npm", "start"]
