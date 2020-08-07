@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Official website of Jack Rust - V1.02
-        </p>
-        <a
-          className="App-link"
-          href="https://twitter.com/JackTimothyRust"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Twitter
-        </a>
-      </header>
-    </div>
-  );
+import Home from './components/Home';
+import Resume from './components/Resume';
+import Error from './components/Error';
+import Navigation from './components/Navigation';
+
+class App extends Component {
+  render() {
+    return (
+       <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+             <Route path="/" component={Home} exact/>
+             <Route path="/resume" component={Resume}/>
+            <Route component={Error}/>
+           </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
