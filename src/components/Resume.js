@@ -3,8 +3,8 @@ import React from 'react';
 const Resume = () => {
     return (
        <div>
-          <h1>Contact US</h1>
-          <p>Contact US page body content</p>
+          <h1>Resume</h1>
+          <p>Available by request from <a href="mailto:jack.timothy.rust@gmail.com">jack.timothy.rust@gmail.com</a></p>
        </div>
     );
 }

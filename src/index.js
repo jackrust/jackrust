@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Menu from "./components/Menu";
+//import Menu from "./components/Menu";
 import './index.css';
+import './App.css';
+import './components/Navigation.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Menu/>, document.getElementById("menu"));
+//ReactDOM.render(<Menu/>, document.getElementById("menu"));
 
 ReactDOM.render(
   <React.StrictMode>
