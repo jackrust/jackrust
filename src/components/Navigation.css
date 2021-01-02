@@ -1,0 +1,8 @@
+#navigation-bar{
+  padding:10px;
+  text-align: right;
+}
+
+#navigation-bar > a{
+  padding:10px;
+}
